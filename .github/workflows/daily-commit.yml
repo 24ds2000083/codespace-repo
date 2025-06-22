@@ -20,4 +20,5 @@ jobs:
           git config user.email "24ds2000083@ds.study.iitm.ac.in"
           git add daily-log.txt
           git commit -m "Daily commit on $(date -u)" || echo "Nothing to commit"
-          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+          git push "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}" HEAD:main
+
